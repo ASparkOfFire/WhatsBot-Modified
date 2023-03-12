@@ -78,7 +78,7 @@ client.on("message", async (msg) => {
       lastseen += timediff[2] ? `${timediff[2]} min ` : "";
       lastseen += `${timediff[3]} sec ago`;
       await msg.reply(
-        `${afkData.msg}\n\n😊😊😊\n\nI am currently offline...\n\n*Reason*: ${reason}\n*Last Seen*:${lastseen}`
+        `${afkData.msg}\n\n*Reason*: ${reason}\n*Last Seen*:${lastseen}`
       );
     }
   }

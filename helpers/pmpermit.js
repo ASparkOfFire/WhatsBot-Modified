@@ -112,7 +112,7 @@ async function handler(id) {
     return {
       permit: false,
       block: false,
-      msg: `*✋ Wait*\n\n Please wait until I will get back to Online, Kindly don't send another message.\n\n _Powered by WhatsBot_`,
+      msg: `Hello! Thank you for reaching out.\nI am currently away from my device,\nbut I will respond as soon as I can.\nThank you for your understanding!.\n\n (\`\`\`Powered by WhatsBot\`\`\`)`,
     };
   } else if (checkPermit.found && !checkPermit.permit) {
     if (checkPermit.times > 3) {
