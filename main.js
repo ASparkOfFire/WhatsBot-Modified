@@ -78,7 +78,7 @@ client.on("message", async (msg) => {
       lastseen += timediff[2] ? `${timediff[2]} min ` : "";
       lastseen += `${timediff[3]} sec ago`;
       await msg.reply(
-        `${afkData.msg}\n\n*Reason*: ${reason}\n*Last Seen*:${lastseen}`
+        `${afkData.msg}\n\n\n*Reason*: ${reason}\n\n*Last Seen*: ${lastseen}\n\n\n\n\n_This is an automated reply by a bot._`
       );
     }
   }

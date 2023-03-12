@@ -112,7 +112,7 @@ async function handler(id) {
     return {
       permit: false,
       block: false,
-      msg: `Hello! Thank you for reaching out.\nI am currently away from my device,\nbut I will respond as soon as I can.\nThank you for your understanding!.\n\n (\`\`\`Powered by WhatsBot\`\`\`)`,
+      msg: `Hello! Thank you for reaching out.\nI am currently away from my device,\nbut I will respond as soon as I can.\nThank you for your understanding!.\n\n_This is an automated reply\n by a bot._ `,
     };
   } else if (checkPermit.found && !checkPermit.permit) {
     if (checkPermit.times > 3) {
